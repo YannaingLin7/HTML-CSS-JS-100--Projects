@@ -1,0 +1,219 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  body {
+    background-color: rgb(24, 61, 61); 
+  }
+
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  body .nav-bar{
+    position: sticky;
+    top: 0;
+    background-color: rgb(4, 13, 18);
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  
+  .nav-items li a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: "Tahoma";
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 0px 3px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .nav-items li a:hover {
+    background-color: rgb(92, 131, 116);
+    color: white;
+  }
+  
+  .about-me .wrapper-contents {
+    color: white;
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  h1{
+    text-align: center;
+    background-color: rgb(147, 177, 166);
+    font-size: 32px;
+    color: white;
+    padding: 5px;
+    margin: 10px 3px;
+  }
+
+  .social a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: rgb(147, 177, 166);
+    font-size: 40px;
+    margin: 10px 10px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0px 20px;
+  }
+
+  .social-img-links{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    background-color: rgb(147, 177, 166);
+    padding: 10px;
+    width: 250px;
+    color: white;
+    font-size: 26px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: white;
+    font-size : 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  
+  p{
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin: 0px 10px;
+    padding: 0px 3px;
+   }
+  
+  .content {
+    background-color: rgb(92, 131, 116);
+    margin: 20px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+  }
+  
+  .about-me img {
+    margin-left: 20px;
+    float: right;
+    width: 160px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  
+  .content li{
+    list-style-type: none;
+    padding: 3px 0px;
+  }
+
+  .content:hover {
+    margin: 0 auto;
+    box-shadow: -10px 10px 10px black;;
+  }
+  
+  .expedition-img {
+    margin-top: 20px;
+    width: 60% ;
+    border-radius: 10px;
+  }
+
+  .tomyblog {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tomyblog h3 {
+    width: 200px;
+    padding: 20px 20px;
+    background-color: black;
+    border: 2px solid white;
+  }
+
+  @media screen and (max-width: 768px ) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .about-me .wrapper-contents {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+
+    .social-img-links {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 20px;
+    }
+
+    .nav-items {
+      display: block;
+    }
+
+    .nav-items li a {
+      text-align: center;
+      width: 100%;
+      float: none;
+      text-decoration: none;
+      color: white;
+      font-family: "Tahoma";
+      font-size: 18px;
+      border-radius: 5px;
+    }
+
+    .nav-items li {
+      margin: 10px 0px;
+    }
+
+    .expedition-img {
+      margin-top: 20px;
+      width: 100% ;
+      border-radius: 10px;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 26px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h3{
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+  }
+  
